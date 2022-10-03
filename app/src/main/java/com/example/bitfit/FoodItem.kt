@@ -8,5 +8,5 @@ import androidx.room.PrimaryKey
 class FoodItem (
     @PrimaryKey(autoGenerate = true) val id: Long = 0,
     @ColumnInfo(name = "Foodname") val foodname: String?,
-    //@ColumnInfo(name = "Calories")  val calories: Int?
+    @ColumnInfo(name = "Calories")  val calories: Int?
 )

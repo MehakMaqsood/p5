@@ -28,7 +28,7 @@ class FoodAdapter internal constructor(context: Context) : RecyclerView.Adapter<
     override fun onBindViewHolder(holder: FoodViewHolder, position: Int) {
         val current = food[position]
         holder.foodItemView.text = current.foodname
-        //holder.numCalView.text = current.calories.toString()
+        holder.numCalView.text = current.calories.toString()
     }
 
     internal fun setFood(food: List<FoodItem>) {

@@ -23,10 +23,10 @@ class AddFoodActivity : AppCompatActivity() {
 
             } else {
                 val food = findViewById<EditText>(R.id.etAddFood).text.toString()
-                //val calories = findViewById<EditText>(R.id.etAddCal).text.toString()
+                val calories = findViewById<EditText>(R.id.etAddCal).text.toString()
 
-
-                replyIntent.putExtra(EXTRA_REPLY, food)
+                replyIntent.putExtra(EXTRA_FOOD, food)
+                replyIntent.putExtra(EXTRA_CALORIES,calories)
                 setResult(Activity.RESULT_OK, replyIntent)
 
             /*    val extras = Bundle()
@@ -44,7 +44,8 @@ class AddFoodActivity : AppCompatActivity() {
 
 
     companion object {
-        const val EXTRA_REPLY = "FOOD_EXTRA"
+        const val EXTRA_FOOD = "FOOD_EXTRA"
+        const val EXTRA_CALORIES = "CALORIES_EXTRA"
     }
 
 }
