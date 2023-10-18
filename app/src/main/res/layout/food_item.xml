@@ -8,7 +8,7 @@
         android:id="@+id/tvFoodItem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Food Item"
+        android:text="Food Item "
         android:textStyle="bold"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="30dp"
@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginRight="20dp"
-        android:text="Calories"
+        android:text="Calories "
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvNumCal" />
 
